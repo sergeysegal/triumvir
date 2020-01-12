@@ -8,7 +8,7 @@
             <img src="/images/logo1.jpg" alt="">
         </a>
     </div>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links-center">
         <ul>
             @auth
                 <li><a href="/home">Home</a></li>
@@ -17,14 +17,14 @@
                     <li><a href="{{route('admin.users.index')}}">Users</a></li>
                 @endif
             @else
-                <li><a href="/home">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#">Product</a></li>
-                <li><a href="#">Team</a></li>
+                <li><a href="/about">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
             @endauth
         </ul>
     </div>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links-right">
         <ul>
             @guest
                 @if (Route::has('login'))
@@ -48,4 +48,29 @@
             @endguest
         </ul>
     </div>
+    <div class="nav-toggle">
+        <i class="f7-icons size-28" id="nav-toggle">bars</i>
+    </div>
 </header>
+
+<script>
+    const navBtn = document.getElementById("nav-toggle");
+    const navLinksCenter = document.getElementById("nav-links-center");
+    const navLinksRight = document.getElementById("nav-links-right");
+    let pageWidth = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+
+    document.addEventListener("DOMContentLoaded", function()  {
+        if(pageWidth < 576) {
+            console.log("loaded!");
+            navLinksCenter.classList.toggle("hide-links");
+            navLinksRight.classList.toggle("hide-links");
+        }
+    });
+
+
+    navBtn.addEventListener("click", () => {
+        console.log("clicked!");
+        navLinksCenter.classList.toggle("hide-links");
+        navLinksRight.classList.toggle("hide-links");
+    });
+</script>

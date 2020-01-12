@@ -4,12 +4,10 @@
 
 @extends('layouts.default')
 
-@section('pageTitle', 'Welcome')
+@section('pageTitle', 'About Us')
 
 @section('content')
-    <div class="main">
-        <p>Welcome page</p>
-    </div>
+    About page
 @endsection
 
 @section('scripts')

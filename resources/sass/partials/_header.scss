@@ -4,6 +4,25 @@
     font-size: 17px;
     background: lightblue;
 
+    $mainTransition: all 0.3s linear;
+    .nav-toggle {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        color: black;
+        cursor: pointer;
+    }
+
+    .hide-links {
+        height: 0;
+        overflow: hidden;
+        transition: $mainTransition;
+    }
+
     ul {
         list-style-type: none;
         margin-bottom: 0;
@@ -18,7 +37,7 @@
             img {
                 width: 100px;
                 height: 50px;
-                background: orange;
+                background: lightblue;
             }
         }
     }
@@ -32,25 +51,28 @@
             align-items: flex-start;
             justify-content: center;
             text-align: center;
-            //margin-bottom: 0px;
 
             li {
-                color: black;
+                //color: black;
                 padding: 10px 10px;
             }
 
             li:hover {
                 width: 100%;
-                color: $mainHoverTextColor;
-                background: $mainHoverBackgroundColor;
+                background: lightskyblue;
                 text-align: left;
             }
 
             li a {
+                color: black;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 padding-right: 200px;
                 border: 1px solid red;
+            }
+
+            li a:hover{
+                color: white;
             }
         }
     }
@@ -65,6 +87,10 @@
         flex-wrap: wrap;
         //border: 1px solid red;
 
+        .nav-toggle {
+            display: none;
+        }
+
         .nav-links ul {
             display: flex;
         }
@@ -75,7 +101,7 @@
                 padding: 14px 15px;
             }
             a:hover {
-                color: $mainHoverTextColor;
+                color: aliceblue;
                 //background: $mainHoverBackgroundColor;
             }
         }
