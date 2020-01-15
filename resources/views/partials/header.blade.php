@@ -20,7 +20,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="#">Product</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
             @endauth
         </ul>
     </div>
@@ -62,8 +62,16 @@
     document.addEventListener("DOMContentLoaded", function()  {
         if(pageWidth < 576) {
             console.log("loaded!");
-            navLinksCenter.classList.toggle("hide-links");
-            navLinksRight.classList.toggle("hide-links");
+            navLinksCenter.classList.add("hide-links");
+            navLinksRight.classList.add("hide-links");
+        }
+    });
+
+    window.addEventListener("resize", function()  {
+        if(pageWidth >= 576) {
+            console.log(">= 576!");
+            navLinksCenter.classList.remove("hide-links");
+            navLinksRight.classList.remove("hide-links");
         }
     });
 
