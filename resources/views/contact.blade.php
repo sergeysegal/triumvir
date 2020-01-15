@@ -9,7 +9,7 @@
 @section('content')
     <div class="sergey-contact-form">
         <div id="container">
-            <h1>&bull; Contact Form &bull;</h1>
+            <h1>Contact Form</h1>
             <div class="underline">
             </div>
             <form action="#" method="post" id="contact_form">
@@ -17,13 +17,13 @@
                     <label for="name"></label>
                     <input type="text" placeholder="Name" name="name" id="name_input" required>
                 </div>
-                <div class="email">
-                    <label for="email"></label>
-                    <input type="email" placeholder="Email" name="email" id="email_input" required>
-                </div>
                 <div class="telephone">
                     <label for="name"></label>
                     <input type="text" placeholder="Phone" name="telephone" id="telephone_input" required>
+                </div>
+                <div class="email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Email" name="email" id="email_input" required>
                 </div>
                 <div class="subject">
                     <label for="subject"></label>
@@ -44,7 +44,7 @@
             </form><!-- // End form -->
         </div><!-- // End #container -->
     </div>
-
+{{--    https://www.jotform.com/blog/20-code-snippets-contact-forms-98615/--}}
 @endsection
 
 @section('scripts')

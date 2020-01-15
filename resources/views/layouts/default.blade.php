@@ -8,6 +8,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link href="{{ mix("css/app.css") }}" rel="stylesheet" />
         <link rel="stylesheet" href="{{asset('icon-assets/framework7/css/framework7-icons.css')}}">
+        @yield('styles')
         <title>@yield('pageTitle')</title>
     </head>
     <body>
