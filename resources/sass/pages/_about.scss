@@ -1,0 +1,68 @@
+.sergey-about-page {
+    .team-container {
+        max-width: 60vw;
+        margin: 0 auto;
+
+        .team-member {
+            border: 1px solid red;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            img {
+                width: 100%;
+            }
+            .fore-text {
+                text-align: center;
+                border: 1px solid green;
+                display: inline-block;
+                position: absolute;
+                margin: 0 auto;
+                top: -150px;
+                padding: 30px 20px;
+                .desc {
+                    h1 {
+                        font-size: 14px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+            margin-bottom: 10px;
+        }
+
+        .team-member:hover {
+
+            .fore-text {
+                .desc {
+                    transform: translateY(150px);
+                    transition: all 2s 0.2s;
+                    h1 {
+                        font-size: 14px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    @media screen and (min-width: 576px) {
+        .team-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .team-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+        }
+    }
+}

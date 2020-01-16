@@ -3,8 +3,8 @@
     width: 100%;
     font-size: 17px;
     background: lightblue;
+    $mainTransition: all 0.2s linear;
 
-    $mainTransition: all 0.3s linear;
     .nav-toggle {
         position: absolute;
         top: 5px;
@@ -14,13 +14,43 @@
         outline: none;
         font-size: 1.5rem;
         color: black;
+    }
+
+    .nav-toggle:hover {
         cursor: pointer;
     }
 
-    .hide-links {
-        height: 0;
-        overflow: hidden;
-        transition: $mainTransition;
+    .show-links {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+
+            li {
+                transition: $mainTransition;
+                padding: 10px 10px;
+            }
+
+            li:hover {
+                width: 100%;
+                background: lightskyblue;
+                text-align: left;
+            }
+
+            li a {
+                color: black;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 200px;
+                //border: 1px solid red;
+            }
+
+            li a:hover{
+                color: white;
+            }
+        }
     }
 
     ul {
@@ -46,34 +76,8 @@
 @media screen and (max-width: 575px){
     .sergey-header {
         .nav-links ul {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            text-align: center;
-
-            li {
-                //color: black;
-                padding: 10px 10px;
-            }
-
-            li:hover {
-                width: 100%;
-                background: lightskyblue;
-                text-align: left;
-            }
-
-            li a {
-                color: black;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-right: 200px;
-                border: 1px solid red;
-            }
-
-            li a:hover{
-                color: white;
-            }
+            height: 0;
+            overflow: hidden;
         }
     }
 }
@@ -85,7 +89,6 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        //border: 1px solid red;
 
         .nav-toggle {
             display: none;
@@ -102,7 +105,6 @@
             }
             a:hover {
                 color: aliceblue;
-                //background: $mainHoverBackgroundColor;
             }
         }
     }

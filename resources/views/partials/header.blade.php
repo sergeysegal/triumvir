@@ -59,26 +59,11 @@
     const navLinksRight = document.getElementById("nav-links-right");
     let pageWidth = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
 
-    document.addEventListener("DOMContentLoaded", function()  {
-        if(pageWidth < 576) {
-            console.log("loaded!");
-            navLinksCenter.classList.add("hide-links");
-            navLinksRight.classList.add("hide-links");
-        }
-    });
-
-    window.addEventListener("resize", function()  {
-        if(pageWidth >= 576) {
-            console.log(">= 576!");
-            navLinksCenter.classList.remove("hide-links");
-            navLinksRight.classList.remove("hide-links");
-        }
-    });
-
-
     navBtn.addEventListener("click", () => {
         console.log("clicked!");
-        navLinksCenter.classList.toggle("hide-links");
-        navLinksRight.classList.toggle("hide-links");
+        navLinksCenter.classList.toggle("show-links");
+        navLinksCenter.classList.toggle("nav-links");
+        navLinksRight.classList.toggle("show-links");
+        navLinksRight.classList.toggle("nav-links");
     });
 </script>

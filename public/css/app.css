@@ -12144,14 +12144,50 @@ body {
   outline: none;
   font-size: 1.5rem;
   color: black;
+}
+
+.sergey-header .nav-toggle:hover {
   cursor: pointer;
 }
 
-.sergey-header .hide-links {
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+.sergey-header .show-links ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.sergey-header .show-links ul li {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding: 10px 10px;
+}
+
+.sergey-header .show-links ul li:hover {
+  width: 100%;
+  background: lightskyblue;
+  text-align: left;
+}
+
+.sergey-header .show-links ul li a {
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 200px;
+}
+
+.sergey-header .show-links ul li a:hover {
+  color: white;
 }
 
 .sergey-header ul {
@@ -12171,42 +12207,8 @@ body {
 
 @media screen and (max-width: 575px) {
   .sergey-header .nav-links ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-            justify-content: center;
-    text-align: center;
-  }
-
-  .sergey-header .nav-links ul li {
-    padding: 10px 10px;
-  }
-
-  .sergey-header .nav-links ul li:hover {
-    width: 100%;
-    background: lightskyblue;
-    text-align: left;
-  }
-
-  .sergey-header .nav-links ul li a {
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 200px;
-    border: 1px solid red;
-  }
-
-  .sergey-header .nav-links ul li a:hover {
-    color: white;
+    height: 0;
+    overflow: hidden;
   }
 }
 
@@ -12462,6 +12464,76 @@ body {
   .sergey-contact-form select,
   .sergey-contact-form textarea {
     font-size: 0.875em;
+  }
+}
+
+.sergey-about-page .team-container {
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+.sergey-about-page .team-container .team-member {
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sergey-about-page .team-container .team-member img {
+  width: 100%;
+}
+
+.sergey-about-page .team-container .team-member .fore-text {
+  text-align: center;
+  border: 1px solid green;
+  display: inline-block;
+  position: absolute;
+  margin: 0 auto;
+  top: -150px;
+  padding: 30px 20px;
+}
+
+.sergey-about-page .team-container .team-member .fore-text .desc h1 {
+  font-size: 14px;
+}
+
+.sergey-about-page .team-container .team-member .fore-text .desc p {
+  font-size: 12px;
+}
+
+.sergey-about-page .team-container .team-member:hover .fore-text .desc {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  -webkit-transition: all 2s 0.2s;
+  transition: all 2s 0.2s;
+}
+
+.sergey-about-page .team-container .team-member:hover .fore-text .desc h1 {
+  font-size: 14px;
+}
+
+.sergey-about-page .team-container .team-member:hover .fore-text .desc p {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 576px) {
+  .sergey-about-page .team-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sergey-about-page .team-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
   }
 }
 
