@@ -12467,6 +12467,15 @@ body {
   }
 }
 
+.sergey-about-page .title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sergey-about-page .title h1 {
+  font-size: 26px;
+}
+
 .sergey-about-page .team-container {
   max-width: 60vw;
   margin: 0 auto;
@@ -12486,34 +12495,47 @@ body {
 
 .sergey-about-page .team-container .team-member .fore-text {
   text-align: center;
-  border: 1px solid green;
   display: inline-block;
   position: absolute;
-  margin: 0 auto;
   top: -150px;
+  width: 100%;
   padding: 30px 20px;
 }
 
-.sergey-about-page .team-container .team-member .fore-text .desc h1 {
+.sergey-about-page .team-container .team-member .fore-text h1 {
   font-size: 14px;
 }
 
-.sergey-about-page .team-container .team-member .fore-text .desc p {
+.sergey-about-page .team-container .team-member .fore-text p {
   font-size: 12px;
 }
 
-.sergey-about-page .team-container .team-member:hover .fore-text .desc {
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
-  -webkit-transition: all 2s 0.2s;
-  transition: all 2s 0.2s;
+.sergey-about-page .team-container .team-member:hover .fore-text {
+  top: -15px;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-transition: all 0.9s 0.1s;
+  transition: all 0.9s 0.1s;
 }
 
-.sergey-about-page .team-container .team-member:hover .fore-text .desc h1 {
+.sergey-about-page .team-container .team-member:hover .fore-text h1 {
+  font-weight: bold;
+  color: darkblue;
+  padding: 5px;
+  -webkit-border-radius: 99px;
+          border-radius: 99px;
+  line-height: 1.5;
+  background: whitesmoke;
   font-size: 14px;
 }
 
-.sergey-about-page .team-container .team-member:hover .fore-text .desc p {
+.sergey-about-page .team-container .team-member:hover .fore-text h1 span {
+  font-weight: normal;
+  color: black;
+}
+
+.sergey-about-page .team-container .team-member:hover .fore-text p {
+  color: red;
   font-size: 12px;
 }
 

@@ -1,4 +1,12 @@
 .sergey-about-page {
+    .title {
+        text-align: center;
+        margin-top: 10px;
+        h1 {
+            font-size: 26px;
+        }
+    }
+
     .team-container {
         max-width: 60vw;
         margin: 0 auto;
@@ -13,37 +21,44 @@
             }
             .fore-text {
                 text-align: center;
-                border: 1px solid green;
+                //border: 1px solid green;
                 display: inline-block;
                 position: absolute;
-                margin: 0 auto;
                 top: -150px;
+                width: 100%;
                 padding: 30px 20px;
-                .desc {
                     h1 {
                         font-size: 14px;
                     }
                     p {
                         font-size: 12px;
                     }
-                }
             }
             margin-bottom: 10px;
         }
 
         .team-member:hover {
-
             .fore-text {
-                .desc {
-                    transform: translateY(150px);
-                    transition: all 2s 0.2s;
+                    top: -15px;
+                    transform: translateY(5px);
+                    transition: all 0.9s 0.1s;
                     h1 {
+                        font-weight: bold;
+                        color: darkblue;
+                        padding: 5px;
+                        border-radius: 99px;
+                        line-height: 1.5;
+                        background: whitesmoke;
                         font-size: 14px;
+                        span {
+                            font-weight: normal;
+                            color: black;
+                        }
                     }
                     p {
+                        color: red;
                         font-size: 12px;
                     }
-                }
             }
         }
     }
