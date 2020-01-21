@@ -60,7 +60,7 @@
 
     .email {
         float: left;
-        width: 70%;
+        width: 45%;
     }
 
     input[type='text'], [type='email'], select, textarea {
@@ -96,8 +96,13 @@
         float: none;
     }
 
-    .name {
+    .first-name {
         float: left;
+        width: 45%;
+    }
+
+    .last-name {
+        float: right;
         width: 45%;
     }
 
@@ -117,7 +122,7 @@
         width: 100%;
     }
 
-    .telephone {
+    .phone {
         float: right;
         width: 45%;
         //width: 100%;
@@ -146,6 +151,11 @@
 
     :-ms-input-placeholder {
         color: #474544;
+    }
+
+    .submit {
+        display: flex;
+        justify-content: center;
     }
 
     #form_button {

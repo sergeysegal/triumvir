@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Validator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Validation rule for only allowing unicode letters and spaces
+        Validator::extend('alpha_spaces', function($attribute, $value)
+        {
+            return preg_match('/^[\pL\s]+$/u', $value);
+        });
+
+        // Validation rule for only allowing unicode letters, numbers, and spaces
+        Validator::extend('alpha_num_spaces', function($attribute, $value)
+        {
+            return preg_match('/^[\pN\pL\s]+$/u', $value);
+        });
     }
 }

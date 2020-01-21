@@ -16,11 +16,14 @@
                 @if($user->isAn('root'))
                     <li><a href="{{route('admin.users.index')}}">Users</a></li>
                 @endif
+                @if($user->isAn('admin'))
+                    <li><a href="{{route('contact.show_all')}}">Submissions</a></li>
+                @endif
             @else
                 <li><a href="/">Home</a></li>
-                <li><a href="#">Product</a></li>
+{{--                <li><a href="{{route('contact.show_all')}}">Product</a></li>--}}
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="{{route('contact.index')}}">Contact Us</a></li>
             @endauth
         </ul>
     </div>

@@ -15,7 +15,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Roy Andermann Jr</h5>
+                        <h5 class="modal-title" id="exampleModalLabel"><img class="img-fluid" src="{{asset('images/logo1-small.jpg')}}" alt="team member"></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -24,7 +24,7 @@
                         <div class="container">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img class="img-fluid" src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member">
+                                <img class="img-fluid" src="{{asset('images/roy-800x600.jpg')}}" alt="team member">
                                 <p class="font-weight-bold mt-2 mb-1">Roy (Deuce)</p>
                                 <p>Chief Executive Officer</p>
                             </div>
@@ -49,7 +49,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Sergey Segal</h5>
+                        <h5 class="modal-title" id="exampleModalLabel"><img class="img-fluid" src="{{asset('images/logo1-small.jpg')}}" alt="team member"></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -58,7 +58,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img class="img-fluid" src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member">
+                                    <img class="img-fluid" src="{{asset('images/sergey-800x600.jpg')}}" alt="team member">
                                     <p class="font-weight-bold mt-2 mb-1">Sergey</p>
                                     <p>Chief Technology Officer</p>
                                 </div>
@@ -84,7 +84,7 @@
 
     <div class="sergey-about-page">
         <div class="title">
-            <h1>Our Team</h1>
+            <h1>Core Team</h1>
         </div>
         <section class="team-container">
             <!--Roy -->
@@ -95,7 +95,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/roy-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <!--Roy End-->
             <!--Sergey -->
@@ -106,17 +106,49 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/sergey-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <!--Sergey End-->
+        </section>
+        <div class="title">
+            <h1>Advisory Team</h1>
+        </div>
+        <section class="team-container">
             <article class="team-member">
-                <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
+                <div class="fore-text">
+                    <h1>David Simpson<br> <span>Advisor</span></h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sergeyModal">
+                        Read Bio
+                    </button>
+                </div>
+                <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
-                <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
+                <div class="fore-text">
+                    <h1>James Anthony Wolff <br> <span>Advisor</span></h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sergeyModal">
+                        Read Bio
+                    </button>
+                </div>
+                <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
-                <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
+                <div class="fore-text">
+                    <h1>Sasha Davenport <br> <span>Advisor</span></h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sergeyModal">
+                        Read Bio
+                    </button>
+                </div>
+                <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member" class="img-responsive">
+            </article>
+            <article class="team-member">
+                <div class="fore-text">
+                    <h1>Sasha Davenport <br> <span>Advisor</span></h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sergeyModal">
+                        Read Bio
+                    </button>
+                </div>
+                <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member" class="img-responsive">
             </article>
         </section>
     </div>

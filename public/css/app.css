@@ -12316,7 +12316,7 @@ body {
 
 .sergey-contact-form .email {
   float: left;
-  width: 70%;
+  width: 45%;
 }
 
 .sergey-contact-form input[type=text],
@@ -12352,8 +12352,13 @@ body {
   float: none;
 }
 
-.sergey-contact-form .name {
+.sergey-contact-form .first-name {
   float: left;
+  width: 45%;
+}
+
+.sergey-contact-form .last-name {
+  float: right;
   width: 45%;
 }
 
@@ -12373,7 +12378,7 @@ body {
   width: 100%;
 }
 
-.sergey-contact-form .telephone {
+.sergey-contact-form .phone {
   float: right;
   width: 45%;
 }
@@ -12401,6 +12406,15 @@ body {
 
 .sergey-contact-form :-ms-input-placeholder {
   color: #474544;
+}
+
+.sergey-contact-form .submit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
 
 .sergey-contact-form #form_button {
@@ -12550,6 +12564,16 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  .sergey-about-page .team-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .sergey-about-page .team-container {
     display: -ms-grid;
     display: grid;

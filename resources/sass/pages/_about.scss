@@ -76,6 +76,14 @@
     @media screen and (min-width: 992px) {
         .team-container {
             display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .team-container {
+            display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-column-gap: 10px;
         }
