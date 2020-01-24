@@ -2,7 +2,6 @@
     use Illuminate\Support\Facades\Storage;
 
     $userId = Auth::user()->id;
-    $img = Storage::get("public/users/$userId/file.jpg");
 ?>
 
 @extends('layouts.ml')
