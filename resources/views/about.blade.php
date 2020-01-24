@@ -121,7 +121,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/dave-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
                 <div class="fore-text">
@@ -130,7 +130,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/anthony-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
                 <div class="fore-text">
@@ -139,7 +139,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/sasha-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
                 <div class="fore-text">
@@ -152,11 +152,6 @@
             </article>
         </section>
     </div>
-
-
-
-
-
 @endsection
 
 @section('scripts')

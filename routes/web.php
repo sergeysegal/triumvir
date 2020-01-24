@@ -35,3 +35,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
 //});
 
 Route::get('/contact/show_all', 'ContactFormController@showAll')->name('contact.show_all');
+
+//Route::get('/demo', function () {
+//    return view('demo');
+//});
+
+Route::resource('/demo', 'DemoController', ['except' => ['show','create', 'update', 'edit', 'destroy']]);

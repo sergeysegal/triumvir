@@ -12,7 +12,7 @@
         <ul>
             @auth
                 <li><a href="/home">Home</a></li>
-                <li><a href="#">Careers</a></li>
+                <li><a href="/demo">Demo</a></li>
                 @if($user->isAn('root'))
                     <li><a href="{{route('admin.users.index')}}">Users</a></li>
                 @endif
@@ -21,7 +21,6 @@
                 @endif
             @else
                 <li><a href="/">Home</a></li>
-{{--                <li><a href="{{route('contact.show_all')}}">Product</a></li>--}}
                 <li><a href="/about">About Us</a></li>
                 <li><a href="{{route('contact.index')}}">Contact Us</a></li>
             @endauth
