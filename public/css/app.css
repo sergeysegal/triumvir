@@ -12583,3 +12583,45 @@ body {
   }
 }
 
+.sergey-product-page .hero {
+  height: -webkit-calc(100vh - 52px);
+  height: calc(100vh - 52px);
+  background: url("/images/corn-field.jpg") center/cover no-repeat fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.sergey-product-page .hero .heading {
+  text-align: center;
+  color: aliceblue;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.sergey-product-page .hero .heading h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.sergey-product-page .hero .heading .heading-subtitle {
+  font-size: 20px;
+}
+
+.sergey-product-page .solution .title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+

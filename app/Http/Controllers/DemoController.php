@@ -44,7 +44,7 @@ class DemoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'file' => 'file|required'
+            'file' => 'required|image|mimes:jpeg'
         ]);
 
         $id = Auth::user()->id;

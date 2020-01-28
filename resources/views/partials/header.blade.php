@@ -20,7 +20,7 @@
                     <li><a href="{{route('contact.show_all')}}">Submissions</a></li>
                 @endif
             @else
-                <li><a href="/">Home</a></li>
+                <li><a href="/">Product</a></li>
                 <li><a href="/about">About Us</a></li>
                 <li><a href="{{route('contact.index')}}">Contact Us</a></li>
             @endauth

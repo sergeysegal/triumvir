@@ -1,0 +1,39 @@
+.sergey-product-page {
+    .hero {
+        height: calc(100vh - 52px);
+        background: url("/images/corn-field.jpg") center/cover no-repeat fixed; //https://live.staticflickr.com/5558/15277889101_c279e4bff3_b.jpg
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .heading {
+            text-align: center;
+            color: aliceblue;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+            border-radius: 100px;
+            padding: 30px;
+            font-weight: bold;
+
+            h1 {
+                font-size: 40px;
+                font-weight: bolder;
+                margin-bottom: 10px;
+            }
+
+            .heading-subtitle {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .solution {
+        .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    }
+
+
+}

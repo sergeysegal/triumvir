@@ -35,7 +35,11 @@
             </div>
         </div>
         <div class="row justify-content-center mt-2">
-            <img src='{{asset("storage/users/$userId/file.jpg")}}' alt="img">
+            @if(File::exists("storage/users/$userId/file.jpg"))
+                <img src='{{asset("storage/users/$userId/file.jpg")}}' alt="img">
+            @else
+                <p>Upload your file</p>
+            @endif
         </div>
         <div class="row">
             <div class="col text-md-right">
