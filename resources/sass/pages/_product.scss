@@ -1,6 +1,6 @@
 .sergey-product-page {
     .hero {
-        height: calc(100vh - 52px);
+        height: calc(100vh - 50px);
         background: url("/images/corn-field.jpg") center/cover no-repeat fixed; //https://live.staticflickr.com/5558/15277889101_c279e4bff3_b.jpg
         display: flex;
         justify-content: center;
@@ -27,13 +27,94 @@
         }
     }
 
-    .solution {
+    .section-title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    //********* WHAT WE OFFER section ************/
+    .what-we-offer {
+        max-width: 90vw;
+        margin: 0 auto;
+        //border: 1px solid red;
+
         .title {
             text-align: center;
-            font-size: 30px;
-            font-weight: bolder;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #1d68a7;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        .description {
+            text-align: justify;
         }
     }
 
+    @media screen and (min-width: 780px) {
+        .what-we-offer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+            .item {
+                background: lightgray;
 
+                img {
+                    max-width: 60%;
+                    margin: 0 auto;
+                }
+
+            }
+        }
+    }
+    //********* end of WHAT WE OFFER section ************/
+
+
+    //********* HOW IT WORKS section ************/
+    .how-it-works {
+        max-width: 90vw;
+        margin: 0 auto;
+        //border: 1px solid orange;
+
+        .title {
+            //text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            //text-transform: uppercase;
+            //color: #1d68a7;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 576px) {
+        .how-it-works {
+
+            .item {
+                margin-top: 5px;
+                display: grid;
+                grid-template-columns: 20% 80%;
+                grid-column-gap: 10px;
+
+                .text-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    //********* end of HOW IT WORKS section ************/
 }
