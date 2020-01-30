@@ -8,12 +8,14 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link href="{{ mix("css/app.css") }}" rel="stylesheet" />
         <link rel="stylesheet" href="{{asset('icon-assets/framework7/css/framework7-icons.css')}}">
+        <link rel="stylesheet" href="{{asset('icon-assets/fontawesome/css/all.min.css')}}">
         @yield('styles')
         <title>@yield('pageTitle')</title>
     </head>
     <body>
         @include('partials.header')
         @yield('content')
+        @include('partials.footer')
         <script src="{{ mix('js/app.js') }}"></script>
         @yield('scripts')
     </body>

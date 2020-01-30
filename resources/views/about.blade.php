@@ -24,7 +24,7 @@
                         <div class="container">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img class="img-fluid" src="{{asset('images/roy-800x600.jpg')}}" alt="team member">
+                                <img class="img-fluid" src="{{asset('images/team/roy-800x600.jpg')}}" alt="team member">
                                 <p class="font-weight-bold mt-2 mb-1">Roy (Deuce)</p>
                                 <p>Chief Executive Officer</p>
                             </div>
@@ -58,7 +58,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img class="img-fluid" src="{{asset('images/sergey-800x600.jpg')}}" alt="team member">
+                                    <img class="img-fluid" src="{{asset('images/team/sergey-800x600.jpg')}}" alt="team member">
                                     <p class="font-weight-bold mt-2 mb-1">Sergey</p>
                                     <p>Chief Technology Officer</p>
                                 </div>
@@ -92,7 +92,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img class="img-fluid" src="{{asset('images/vlad-800x600.jpg')}}" alt="team member">
+                                    <img class="img-fluid" src="{{asset('images/team/vlad-800x600.jpg')}}" alt="team member">
                                     <p class="font-weight-bold mt-2 mb-1">Vladimir</p>
                                     <p>Advisor</p>
                                 </div>
@@ -126,7 +126,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img class="img-fluid" src="{{asset('images/dave-800x600.jpg')}}" alt="team member">
+                                    <img class="img-fluid" src="{{asset('images/team/dave-800x600.jpg')}}" alt="team member">
                                     <p class="font-weight-bold mt-2 mb-1">David</p>
                                     <p>Advisor</p>
                                 </div>
@@ -160,7 +160,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img class="img-fluid" src="{{asset('images/sasha-800x600.jpg')}}" alt="team member">
+                                    <img class="img-fluid" src="{{asset('images/team/sasha-800x600.jpg')}}" alt="team member">
                                     <p class="font-weight-bold mt-2 mb-1">Sasha</p>
                                     <p>Advisor</p>
                                 </div>
@@ -194,7 +194,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img class="img-fluid" src="{{asset('images/anthony-800x600.jpg')}}" alt="team member">
+                                    <img class="img-fluid" src="{{asset('images/team/anthony-800x600.jpg')}}" alt="team member">
                                     <p class="font-weight-bold mt-2 mb-1">James</p>
                                     <p>Advisor</p>
                                 </div>
@@ -228,7 +228,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img class="img-fluid" src="{{asset('images/sasha_g-800x600.jpg')}}" alt="team member">
+                                    <img class="img-fluid" src="{{asset('images/team/sasha_g-800x600.jpg')}}" alt="team member">
                                     <p class="font-weight-bold mt-2 mb-1">Sasha</p>
                                     <p>Advisor</p>
                                 </div>
@@ -267,7 +267,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/roy-800x600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/team/roy-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <!--Roy End-->
             <!--Sergey -->
@@ -278,7 +278,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/sergey-800x600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/team/sergey-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <!--Sergey End-->
         </section>
@@ -293,7 +293,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/dave-800x600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/team/dave-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
                 <div class="fore-text">
@@ -302,7 +302,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/anthony-800x600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/team/anthony-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
                 <div class="fore-text">
@@ -311,7 +311,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/sasha-800x600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/team/sasha-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
                 <div class="fore-text">
@@ -320,7 +320,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/vlad-800x600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/team/vlad-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
                 <div class="fore-text">
@@ -329,7 +329,7 @@
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/sasha_g-800x600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/team/sasha_g-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
         </section>
     </div>

@@ -1,0 +1,45 @@
+.sergey-footer {
+    background: black;
+    color: whitesmoke;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .footer-links,
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .footer-link {
+        color: whitesmoke;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        margin-right: 1rem;
+        letter-spacing: 0.25rem;
+        transition: all 0.3s linear;
+    }
+
+    .footer-link:hover {
+        color: $cyan;
+    }
+
+    .footer-icon {
+        font-size: 1.9rem;
+        margin-right: 1rem;
+        color: whitesmoke;
+        transition: all 0.3s linear;
+    }
+
+    .footer-icon:hover {
+        color: $cyan;
+        transform: translateY(-10%);
+    }
+
+    .copyright {
+        letter-spacing: 0.25rem;
+        margin-bottom: 0;
+    }
+}
