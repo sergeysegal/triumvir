@@ -12126,6 +12126,20 @@ a.text-dark:focus {
 
 body {
   font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.spacer {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
 }
 
 .sergey-header {
@@ -12790,6 +12804,5 @@ body {
 
 .sergey-footer .copyright {
   letter-spacing: 0.25rem;
-  margin-bottom: 0;
 }
 

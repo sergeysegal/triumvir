@@ -15,6 +15,7 @@
     <body>
         @include('partials.header')
         @yield('content')
+        <div class="spacer"></div>
         @include('partials.footer')
         <script src="{{ mix('js/app.js') }}"></script>
         @yield('scripts')
