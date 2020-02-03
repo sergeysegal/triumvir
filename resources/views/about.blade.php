@@ -29,7 +29,7 @@
                                 <p>Chief Executive Officer</p>
                             </div>
                             <div class="col-sm-8">
-                                <p class="float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci assumenda, commodi, dolorem enim eum explicabo fuga fugit, libero modi nulla placeat quia sapiente sequi similique sint sit vel. Ad eaque incidunt quia vel veniam. Accusamus aliquid debitis esse, est, harum impedit magni modi natus sapiente similique, sunt tenetur veniam.
+                                <p class="float-right">Roy (Deuce) Andermann Jr holds MS degrees in both Chemical Engineering and Biological Sciences. He has three years of experience working as a subject matter expert on regulatory law in the crude refining sector.  Most recently he has served in a private consulting role, offering regulatory permitting, reporting, process improvement, project management, and personnel training services to multinational clients in the petrochemical industry. In 2018, Deuce placed 1st in the United States and 4th globally in the Corporate Finance Institute’s Global Financial Modeling Competition.
                                 </p>
                             </div>
                         </div>
@@ -194,12 +194,12 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img class="img-fluid" src="{{asset('images/team/anthony-800x600.jpg')}}" alt="team member">
+                                    <img class="img-fluid" src="{{asset('images/team/james-800x600.jpg')}}" alt="team member">
                                     <p class="font-weight-bold mt-2 mb-1">James</p>
                                     <p>Advisor</p>
                                 </div>
                                 <div class="col-sm-8">
-                                    <p class="float-right">
+                                    <p class="float-right">James Wolff is an attorney and entrepreneur, developing a corporate portfolio of innovative and cutting edge startup companies including 3D printing technology, robotics, commercial space, and more. He is a graduate of Johns Hopkins and New York Law School. James's portfolio includes co-founding companies such as Deep Space Industries; Space Initiatives; United Frontiers; and Immortal Data, where he serves as Chief Financial Officer.
                                     </p>
                                 </div>
                             </div>
@@ -297,12 +297,12 @@
             </article>
             <article class="team-member">
                 <div class="fore-text">
-                    <h1>James Anthony Wolff <br> <span>Advisor</span></h1>
+                    <h1>James Wolff <br> <span>Advisor</span></h1>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jamesModal">
                         Read Bio
                     </button>
                 </div>
-                <img src="{{asset('images/team/anthony-800x600.jpg')}}" alt="team member" class="img-responsive">
+                <img src="{{asset('images/team/james-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <article class="team-member">
                 <div class="fore-text">
