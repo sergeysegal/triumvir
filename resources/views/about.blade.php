@@ -248,6 +248,40 @@
             </div>
         </div>
         <!--Sasha G Modal End -->
+        <!--Denis Modal -->
+        <div class="modal fade" id="denisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><img class="img-fluid" src="{{asset('images/logo1-small.jpg')}}" alt="team member"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="{{asset('images/team/denis-800x600.jpg')}}" alt="team member">
+                                    <p class="font-weight-bold mt-2 mb-1">Denis Santelli</p>
+                                    <p>Advisor</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="float-right">Denis Santelli is a French Artist living in Paris. He holds a Master in Fine Arts MFA (DNSEP) from the North French Higher Art School (Ecole des Beaux-Arts). For the last 20 years, Santelli’s been experimenting with various innovative technologies related to digital art including generative art, but Denis Santelli is a classically trained artist, his primary medium was oil paint on canvas. Today he paints beginning in a 3D space using virtual reality technology but he ends on a real canvas by a real painting act.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Denis Modal End -->
     </div>
     <!--**************Modals End*********************************-->
 
@@ -330,6 +364,15 @@
                     </button>
                 </div>
                 <img src="{{asset('images/team/sasha_g-800x600.jpg')}}" alt="team member" class="img-responsive">
+            </article>
+            <article class="team-member">
+                <div class="fore-text">
+                    <h1>Denis Santelli <br> <span>Advisor</span></h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#denisModal">
+                        Read Bio
+                    </button>
+                </div>
+                <img src="{{asset('images/team/denis-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
         </section>
     </div>

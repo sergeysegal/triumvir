@@ -1,0 +1,35 @@
+.sergey-career-page {
+    .search {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a {
+            color: white;
+            background-color: #1d68a7;
+            border-radius: 25px;
+            padding: 10px;
+        }
+        a:hover {
+            //text-decoration: none;
+        }
+    }
+
+    #tab-value-selector {
+        .links {
+        text-align: center;
+        background-color: rgb(53,73,94);
+
+        }
+        .output {
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+            text-align: center;
+
+            .title {
+                font-size: 24px;
+            }
+        }
+
+    }
+}

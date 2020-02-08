@@ -14,10 +14,10 @@
     </head>
     <body>
         @include('partials.header')
-        @yield('content')
+        <div id="app">@yield('content')</div>
         <div class="spacer"></div>
         @include('partials.footer')
-        <script src="{{ mix('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
         @yield('scripts')
     </body>
 </html>

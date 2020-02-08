@@ -12753,6 +12753,40 @@ body {
   }
 }
 
+.sergey-career-page .search {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sergey-career-page .search a {
+  color: white;
+  background-color: #1d68a7;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  padding: 10px;
+}
+
+.sergey-career-page #tab-value-selector .links {
+  text-align: center;
+  background-color: #35495e;
+}
+
+.sergey-career-page #tab-value-selector .output {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.sergey-career-page #tab-value-selector .output .title {
+  font-size: 24px;
+}
+
 .sergey-footer {
   background: black;
   color: whitesmoke;

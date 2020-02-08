@@ -27,7 +27,7 @@
                 </div>
             </article>
             <article class="item">
-                <div class="title">Geospatial Mapping</div>
+                <div class="title">Disease Geotagging</div>
                 <div class="img-container">
                     <img src="{{asset('images/pages/product/geospatial-map.png')}}" alt="">
 {{--                    https://pixabay.com/vectors/map-pin-icon-map-pin-travel-1272165/--}}
