@@ -44,7 +44,7 @@ class ContactFormController extends Controller
         $message = filter_var($request->get('message'), FILTER_SANITIZE_STRING);
 
         $validated = $request->validate([
-            'firstName' => 'required|alpha_spaces',
+            'firstName' => 'required|alpha',
             'lastName' => 'required|alpha',
             'phone' => 'alpha_dash',
             'email' => 'required|email',

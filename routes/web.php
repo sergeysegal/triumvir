@@ -33,4 +33,4 @@ Route::get('/contact/show_all', 'ContactFormController@showAll')->name('contact.
 
 Route::resource('/demo', 'DemoController', ['except' => ['show','create', 'update', 'edit', 'destroy']]);
 
-Route::resource('/careers', 'CareerController', ['except' => ['show','create', 'update', 'edit', 'destroy']]);
+Route::resource('/careers', 'JobController', ['except' => ['show', 'update', 'edit', 'destroy']]);

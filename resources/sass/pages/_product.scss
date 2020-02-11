@@ -28,6 +28,8 @@
     }
 
     .section-title {
+        margin-top: 10px;
+        margin-bottom: 15px;
         text-align: center;
         font-size: 30px;
         font-weight: bolder;
@@ -109,30 +111,12 @@
     }
     //********* end of WHAT WE OFFER section ************/
 
-
     //********* HOW IT WORKS section ************/
-    //.how-it-works {
-    //    max-width: 90vw;
-    //    margin: 0 auto;
-    //    .item {
-    //        .title {
-    //            font-size: 18px;
-    //            font-weight: bold;
-    //        }
-    //
-    //        .icon-container {
-    //            margin: 0 auto;
-    //            text-align: center;
-    //        }
-    //    }
-    //}
-
-    //test
     .how-it-works {
         max-width: 90vw;
         margin: 0 auto;
         .item {
-
+            margin-bottom: 15px;
             .title {
                 font-size: 18px;
                 font-weight: bold;
@@ -169,31 +153,6 @@
             }
         }
     }
-
-    //end of test
-
-    //@media screen and (min-width: 576px) {
-    //    .how-it-works {
-    //
-    //        .item {
-    //            margin-top: 5px;
-    //            display: grid;
-    //            grid-template-columns: 10% 90%;
-    //            grid-column-gap: 10px;
-    //
-    //            //.icon-container {
-    //            //    width: 40%;
-    //            //    margin: 0 auto;
-    //            //}
-    //
-    //            .text-container {
-    //                display: flex;
-    //                flex-direction: column;
-    //                justify-content: center;
-    //            }
-    //        }
-    //    }
-    //}
 
     //********* end of HOW IT WORKS section ************/
 }

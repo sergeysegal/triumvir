@@ -1,0 +1,71 @@
+.sergey-jobs-index-page {
+    .heading {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    #tab-value-selector {
+        .links {
+            text-align: center;
+            background-color: rgb(53,73,94);
+        }
+
+        .output {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .title {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .mission {
+        margin: 0 auto;
+        padding: 5px 30px;
+        text-align: justify;
+    }
+
+    .culture {
+        .description {
+            background-color: yellowgreen;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+            article {
+                margin: 0 auto;
+                h4 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .culture-hidden {
+        display: none;
+    }
+
+    .benefits {
+        .items {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            ul {
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    .benefits-hidden {
+        display: none;
+    }
+}
