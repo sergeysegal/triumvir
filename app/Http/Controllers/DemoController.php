@@ -22,7 +22,7 @@ class DemoController extends Controller
      */
     public function index()
     {
-        return view('demo');
+        return view('demos.index');
     }
 
     /**
@@ -55,8 +55,16 @@ class DemoController extends Controller
             Storage::putFileAs("public/users/$id",$file, 'file.jpg');
         }
 
-        return redirect()->route('demo.index');
+//        $demo = new Demo();
+
+
+        return redirect()->route('demos.mobile-net-images');
 //        return view('demo', compact('id'));
+    }
+
+    public function test() {
+        return view('demos.mobile-net-images');
+
     }
 
     /**
@@ -67,7 +75,8 @@ class DemoController extends Controller
      */
     public function show(Demo $demo)
     {
-        //
+//        return "hello";
+//        return view('demos.mobile-net-images');
     }
 
     /**

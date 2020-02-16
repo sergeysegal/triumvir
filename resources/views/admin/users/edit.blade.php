@@ -19,7 +19,7 @@ foreach ($all_role_names as $role) {
 }
 ?>
 {{--{{print_r($unassigned_roles)}}--}}
-@extends('layouts.default')
+@extends('layouts.admin')
 
 @section('pageTitle', 'Home')
 

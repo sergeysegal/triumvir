@@ -23,7 +23,7 @@
                     </div>
                 @endif
             </div>
-            <form action="{{action('ContactFormController@store')}}" method="post">
+            <form action="{{route('contact.store')}}" method="post">
                 @csrf
                 <div class="first-name">
                     <label for="firstName"></label>

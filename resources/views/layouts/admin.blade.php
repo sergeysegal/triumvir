@@ -13,7 +13,7 @@
         <title>@yield('pageTitle')</title>
     </head>
     <body>
-        @include('partials.header')
+        @include('partials.admin-header')
         <div id="app">@yield('content')</div>
         <div class="spacer"></div>
         @include('partials.footer')

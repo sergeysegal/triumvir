@@ -2,7 +2,7 @@
     $user = Auth::user();
 ?>
 
-<header class="sergey-header">
+<header class="sergey-admin-header">
     <div class="nav-logo">
         <a href="#">
             <img src="/images/logo1.jpg" alt="">
@@ -11,15 +11,11 @@
     <div class="nav-links" id="nav-links-center">
         <ul>
             @auth
-                <li><a href="/home">Home</a></li>
                 <li><a href="{{route('demos.index')}}">Demos</a></li>
                 @if($user->isAn('root'))
                     <li><a href="{{route('admin.users.index')}}">Users</a></li>
                 @endif
-            @else
-                <li><a href="/">Product</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="{{route('contact.index')}}">Contact Us</a></li>
+                <li><a href="{{route('contact.show_all')}}">Inquieries</a></li>
             @endauth
         </ul>
     </div>

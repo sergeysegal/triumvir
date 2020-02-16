@@ -13,6 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <!-- ml5 -->
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <!-- other -->
+    <link rel="stylesheet" href="{{asset('icon-assets/fontawesome/css/all.min.css')}}">
+    @yield('styles')
     <title>Document</title>
 </head>
 <body>

@@ -12265,6 +12265,129 @@ body {
   }
 }
 
+.sergey-admin-header {
+  min-height: 50px;
+  width: 100%;
+  font-size: 17px;
+  background: yellowgreen;
+}
+
+.sergey-admin-header .nav-toggle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.sergey-admin-header .nav-toggle:hover {
+  cursor: pointer;
+}
+
+.sergey-admin-header .show-links ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.sergey-admin-header .show-links ul li {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding: 10px 10px;
+}
+
+.sergey-admin-header .show-links ul li:hover {
+  width: 100%;
+  background: lightskyblue;
+  text-align: left;
+}
+
+.sergey-admin-header .show-links ul li a {
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 200px;
+}
+
+.sergey-admin-header .show-links ul li a:hover {
+  color: white;
+}
+
+.sergey-admin-header ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.sergey-admin-header a {
+  text-decoration: none;
+}
+
+.sergey-admin-header .nav-logo a img {
+  width: 100px;
+  height: 50px;
+  background: lightblue;
+}
+
+@media screen and (max-width: 575px) {
+  .sergey-admin-header .nav-links ul {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .sergey-admin-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .sergey-admin-header .nav-toggle {
+    display: none;
+  }
+
+  .sergey-admin-header .nav-links ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .sergey-admin-header .nav-links a {
+    color: black;
+    padding: 14px 15px;
+  }
+
+  .sergey-admin-header .nav-links a:hover {
+    color: aliceblue;
+  }
+}
+
 .sergey-contact-form html {
   font-family: "Montserrat", Arial, sans-serif;
   -ms-text-size-adjust: 100%;
@@ -12798,7 +12921,6 @@ body {
 }
 
 .sergey-jobs-index-page .culture .description {
-  background-color: yellowgreen;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;

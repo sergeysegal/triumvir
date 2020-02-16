@@ -1,0 +1,113 @@
+.sergey-admin-header {
+    min-height: 50px;
+    width: 100%;
+    font-size: 17px;
+    background: yellowgreen;
+    $mainTransition: all 0.2s linear;
+
+    .nav-toggle {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .nav-toggle:hover {
+        cursor: pointer;
+    }
+
+    .show-links {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+
+            li {
+                transition: $mainTransition;
+                padding: 10px 10px;
+            }
+
+            li:hover {
+                width: 100%;
+                background: lightskyblue;
+                text-align: left;
+            }
+
+            li a {
+                color: black;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 200px;
+                //border: 1px solid red;
+            }
+
+            li a:hover{
+                color: white;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin-bottom: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .nav-logo {
+        a {
+            img {
+                width: 100px;
+                height: 50px;
+                background: lightblue;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px){
+    .sergey-admin-header {
+        .nav-links ul {
+            height: 0;
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .sergey-admin-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .nav-toggle {
+            display: none;
+        }
+
+        .nav-links ul {
+            display: flex;
+        }
+
+        .nav-links {
+            a {
+                color: black;
+                padding: 14px 15px;
+            }
+            a:hover {
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+

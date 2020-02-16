@@ -2,7 +2,7 @@
 
 ?>
 
-@extends('layouts.default')
+@extends('layouts.admin')
 
 @section('pageTitle', 'Contact Us')
 

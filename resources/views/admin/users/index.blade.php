@@ -11,14 +11,14 @@ else if (Bouncer::is(Auth()->user())->notAn('admin','root')) {
 
 ?>
 
-@extends('layouts.default')
+@extends('layouts.admin')
 
 @section('pageTitle', 'Home')
 
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-sm-9">
                 <div class="card">
                     <div class="card-header">Users</div>
                     <div class="card-body">
@@ -41,7 +41,7 @@ else if (Bouncer::is(Auth()->user())->notAn('admin','root')) {
                                 <td>{{$user->getRoles()}}</td>
                                 <td>
                                     <a href="{{route('admin.users.edit', $user->id)}}"><button type="button" class="btn btn-primary float-left">Edit</button></a>
-                                    <form action="{{route('admin.users.destroy', $user)}}" method="post" class="float-left">
+                                    <form action="{{route('admin.users.destroy', $user)}}" method="post" class="float-left ml-1">
                                         @csrf
                                         {{method_field('delete')}}
                                         <button type="submit" class="btn btn-danger">Delete</button>

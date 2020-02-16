@@ -24,13 +24,16 @@ Route::get('/about', function () {
 });
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
-    Route::resource('/users', 'UsersController', ['except' => ['show', 'create', 'store']]);
+    Route::resource('/users', 'UserController', ['except' => ['show', 'create', 'store']]);
 });
 
 Route::resource('/contact', 'ContactFormController', ['except' => ['show','create', 'update', 'edit', 'destroy']]);
+Route::get('admin/contact/show_all', 'ContactFormController@showAll')->name('contact.show_all');
 
-Route::get('/contact/show_all', 'ContactFormController@showAll')->name('contact.show_all');
 
-Route::resource('/demo', 'DemoController', ['except' => ['show','create', 'update', 'edit', 'destroy']]);
+//Route::resource('/demos', 'DemoController', ['except' => ['show','create', 'update', 'edit', 'destroy']]);
+Route::get('demos', 'DemoController@index')->name('demos.index');
+Route::post('demos','DemoController@store')->name('demos.store');
+Route::get('demos/mobile-net-images', 'DemoController@test')->name('demos.mobile-net-images');
 
 Route::resource('/careers', 'JobController', ['except' => ['show', 'update', 'edit', 'destroy']]);

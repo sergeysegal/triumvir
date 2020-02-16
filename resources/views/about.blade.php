@@ -285,9 +285,6 @@
     </div>
     <!--**************Modals End*********************************-->
 
-
-
-
     <div class="sergey-about-page">
         <div class="title">
             <h1>Core Team</h1>

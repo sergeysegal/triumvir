@@ -38,7 +38,7 @@ class JobController extends Controller
         $request->validate([
             'job_id' => 'required|alpha_dash',
             'job_title' => 'required|alpha_num_spaces',
-            'team_title' => 'required|alpha_num_spaces',
+            'job_family' => 'required|alpha_num_spaces',
             'location' => 'required|alpha_num_spaces',
             'role_desc' => 'required|string',
             'responsibilities' => 'required|string',
@@ -48,7 +48,7 @@ class JobController extends Controller
         $job = new Job();
         $job->job_id = $request->job_id;
         $job->job_title = $request->job_title;
-        $job->team_title = $request->team_title;
+        $job->job_family = $request->job_family;
         $job->location = $request->location;
         $job->role_desc = filter_var($request->role_desc, FILTER_SANITIZE_STRING);
         $job->responsibilities = filter_var($request->responsibilities, FILTER_SANITIZE_STRING);

@@ -3,7 +3,7 @@
     <div class="footer-links">
         <a href="/" class="footer-link">product</a>
         <a href="/about" class="footer-link">about</a>
-        <a href="/contact" class="footer-link">contact</a>
+        <a href="{{route('contact.index')}}" class="footer-link">contact</a>
         <a href="/careers" class="footer-link">careers</a>
     </div>
     <!-- footer icons -->

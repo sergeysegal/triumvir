@@ -15,6 +15,9 @@ class CreateDemosTable extends Migration
     {
         Schema::create('demos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('demo_id');
+            $table->integer('user_id');
+            $table->string('file_name');
             $table->timestamps();
         });
     }

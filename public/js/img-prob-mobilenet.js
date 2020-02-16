@@ -1,10 +1,10 @@
 console.log('ml5 version:', ml5.version);
 let mobilenet;
-let inputImage;
 
 function modelReady() {
     console.log('Model is ready!');
     console.log(localStorage.getItem('userId'));
+    const inputImage = document.querySelector("#myImage");
     mobilenet.predict(inputImage, getResults);
 }
 
@@ -21,11 +21,6 @@ function getResults(error, results) {
     let prob1 = results[1].confidence;
     let label2 = results[2].label;
     let prob2 = results[2].confidence;
-    // fill(0);
-    // textSize(64);
-    // text(label0, 10, height - 100);
-    // createP(label0);
-    // createP(prob0);
 
     localStorage.setItem("label0", label0);
     document.getElementById("label0").innerHTML = localStorage.getItem("label0");
@@ -47,19 +42,9 @@ function getResults(error, results) {
 
 }
 
-function imageReady() {
-    // image(inputImage, 0, 0, width, height);
-}
-
 function setup() {
-    // createCanvas(640, 480);
-    inputImage = createImg(`storage/users/${id}/file.jpg`, imageReady);
-    inputImage.hide();
+    // console.log(`storage/users/${id}/file.jpg`);
+    // localStorage.setItem("newImage",`storage/users/${id}/file.jpg`);
     mobilenet = ml5.imageClassifier('MobileNet', modelReady);
 
 }
-
-// function draw() {
-//     background(100);
-//     image(inputImage, 0, 0);
-// }

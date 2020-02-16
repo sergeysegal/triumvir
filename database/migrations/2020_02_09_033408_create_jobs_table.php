@@ -17,7 +17,7 @@ class CreateJobsTable extends Migration
             $table->bigIncrements('id');
             $table->string('job_id');
             $table->string('job_title');
-            $table->string('team_title');
+            $table->string('job_family');
             $table->string('location');
             $table->text('role_desc');
             $table->text('responsibilities');

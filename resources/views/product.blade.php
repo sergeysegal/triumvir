@@ -53,8 +53,8 @@
 {{--                    <img src="{{asset('images/tiger1-800by600.jpg')}}" alt="">--}}
                 </div>
                 <div class="text-container">
-                    <div class="title">1. Book an appointment for a free consultation</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum fugiat laudantium minima reiciendis sit?</p>
+                    <div class="title">1. <a href="{{route('contact.index')}}">Book an appointment</a> for a free consultation</div>
+{{--                    <p><a href="{{route('contact.index')}}">Contact</a></p>--}}
                 </div>
             </article>
             <article class="item">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="text-container">
                     <div class="title">2. Discuss your options</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum fugiat laudantium minima reiciendis sit?</p>
+{{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum fugiat laudantium minima reiciendis sit?</p>--}}
                 </div>
             </article>
             <article class="item">
@@ -74,7 +74,7 @@
                 </div>
                 <div class="text-container">
                     <div class="title">3. If you choose to move forward, we will come and get the job done!</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum fugiat laudantium minima reiciendis sit?</p>
+{{--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum fugiat laudantium minima reiciendis sit?</p>--}}
                 </div>
             </article>
         </section>

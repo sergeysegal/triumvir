@@ -16,7 +16,7 @@
 {{--    <career-page-selector :test='@json($mydata)' test2="lala"></career-page-selector>--}}
     <div class="sergey-jobs-index-page">
         <div class="heading">
-            <h1>Start on your journey with Triumvir Technologies...</h1>
+            <h1>We seek passion, expertise, and leadership</h1>
         </div>
         <tab-value-selector :titles='@json($titles)' :descriptions='@json($descriptions)'></tab-value-selector>
         <div class="culture culture-hidden">
@@ -24,14 +24,18 @@
                 <article>
                     <h4>Mission-driven</h4>
                     <p>We care deeply about building products that benefit humanity.</p>
+                    <h4>Proactive</h4>
+                    <p>We try to prevent problems before they arise</p>
                     <h4>Growth mindset</h4>
-                    <p>We care deeply about building products that benefit humanity.</p>
+                    <p>We encourage continuous learning, innovation, and growth.</p>
                 </article>
                 <article>
+                    <h4>Data-driven</h4>
+                    <p>We validate our work with numbers</p>
                     <h4>Collaborative</h4>
                     <p>We believe in team synergy</p>
-                    <h4>Iterative</h4>
-                    <p>We care deeply about building products that benefit humanity.</p>
+                    <h4>Focused</h4>
+                    <p>We believe that laser focus is key to success</p>
                 </article>
             </div>
         </div>
@@ -48,8 +52,8 @@
             </div>
         </div>
         <section class="job-openings">
-
         </section>
+
     </div>
 @endsection
 
