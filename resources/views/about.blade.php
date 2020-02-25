@@ -63,7 +63,7 @@
                                     <p>Chief Technology Officer</p>
                                 </div>
                                 <div class="col-sm-8">
-                                    <p class="float-right">Sergey Segal has over nine years of software engineering and management experience in both startups and large corporations. He holds an MS in Biomedical Engineering from the University of Wisconsin-Madison, where he also taught Mathematics and Chemistry during his graduate studies. Some of Sergey’s past work experience includes applying algorithms to eliminate artifacts from radiographic imaging modalities; building scalable, data-driven applications for the financial and marketing industries; and developing vision testing software pharmaceutical companies to test drug efficacy.
+                                    <p class="float-right">Sergey Segal has over nine years of software engineering and management experience in both startups and large corporations. He holds an MS in Biomedical Engineering from the University of Wisconsin-Madison, where he also taught Mathematics and Chemistry during his graduate studies. Some of Sergey’s past work experience includes applying algorithms to eliminate artifacts from radiographic imaging modalities; building scalable, data-driven applications for the financial and marketing industries; and developing software for pharmaceutical companies to test drug efficacy.
                                     </p>
                                 </div>
                             </div>
