@@ -17,9 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('home', 'HomeController@index')->name('home');
 
-Route::get('/about', function () {
+Route::get('about', function () {
    return view('about');
 });
 
@@ -27,7 +27,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
     Route::resource('/users', 'UserController', ['except' => ['show', 'create', 'store']]);
 });
 
-Route::resource('/contact', 'ContactFormController', ['except' => ['show','create', 'update', 'edit', 'destroy']]);
+Route::resource('contact', 'ContactFormController', ['except' => ['show','create', 'update', 'edit', 'destroy']]);
 Route::get('admin/contact/show_all', 'ContactFormController@showAll')->name('contact.show_all');
 
 

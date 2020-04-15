@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Validator;
 
@@ -24,6 +25,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        //Enable https in remote environment (update .env file)
+        if (app()->environment('remote')) {
+            URL::forceScheme('https');
+        }
+
         // Validation rule for only allowing unicode letters and spaces
         Validator::extend('alpha_spaces', function($attribute, $value)
         {
