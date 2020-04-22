@@ -8,9 +8,9 @@
     </div>
     <!-- footer icons -->
     <div class="footer-icons">
-        <a href="https://www.twitter.com" target="_blank" class="footer-icon"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com" target="_blank" class="footer-icon"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.linkedin.com" target="_blank" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+{{--        <a href="https://www.twitter.com" target="_blank" class="footer-icon"><i class="fab fa-twitter"></i></a>--}}
+{{--        <a href="https://www.facebook.com" target="_blank" class="footer-icon"><i class="fab fa-facebook"></i></a>--}}
+        <a href="https://www.linkedin.com/company/triumvirtechnologies" target="_blank" class="footer-icon"><i class="fab fa-linkedin"></i></a>
     </div>
     <!-- copyright -->
     <p class="copyright">
