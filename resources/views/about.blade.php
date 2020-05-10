@@ -77,6 +77,40 @@
             </div>
         </div>
         <!--Sergey Modal End -->
+        <!--Xavier Modal -->
+        <div class="modal fade" id="xavierModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><img class="img-fluid" src="{{asset('images/logo1-small.jpg')}}" alt="team member"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="{{asset('images/team/xavier-800x600.jpg')}}" alt="team member">
+                                    <p class="font-weight-bold mt-2 mb-1">Xavier</p>
+                                    <p>Senior Scientist</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="float-right">Xavier Phillips holds an MS in Plant Pathology and Microbiology from Iowa State University, where he currently is a PhD candidate. His graduate work has consisted of field experiments involving fungicides and their impact on soybean diseases and disorders. In addition, he has experience with remote sensing, image analysis, UAVs, and GPS technology.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Xavier Modal End -->
         <!--Vladimir Modal -->
         <div class="modal fade" id="vladimirModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
@@ -278,6 +312,17 @@
                 <img src="{{asset('images/team/sergey-800x600.jpg')}}" alt="team member" class="img-responsive">
             </article>
             <!--Sergey End-->
+            <!--Xavier -->
+            <article class="team-member">
+                <div class="fore-text">
+                    <h1>Xavier Phillips<br> <span>Senior Scientist</span></h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#xavierModal">
+                        Read Bio
+                    </button>
+                </div>
+                <img src="{{asset('images/team/xavier-800x600.jpg')}}" alt="team member" class="img-responsive">
+            </article>
+            <!--Xavier End-->
         </section>
         <div class="title">
             <h1>Advisory Team</h1>
