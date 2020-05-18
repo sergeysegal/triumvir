@@ -12,8 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('product');
+    return view('welcome');
 });
+
+//Route::get('welcome')->name('welcome');
 
 Auth::routes();
 

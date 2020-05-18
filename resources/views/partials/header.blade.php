@@ -17,7 +17,7 @@
                     <li><a href="{{route('admin.users.index')}}">Users</a></li>
                 @endif
             @else
-                <li><a href="/">Product</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
                 <li><a href="{{route('contact.index')}}">Contact Us</a></li>
             @endauth
