@@ -9,9 +9,6 @@
 @section('content')
     <div class="sergey-contact-form">
         <div id="container">
-            <h1>Contact Form</h1>
-            <div class="underline">
-            </div>
             <div class="row justify-content-center">
                 @if ($errors->any())
                     <div class="alert alert-danger">
@@ -23,6 +20,25 @@
                     </div>
                 @endif
             </div>
+            <div class="row justify-content-center">
+                @if (isset($status))
+                    @if(strpos($status, 'successfully') !== false)
+                        <div class="alert alert-success">
+                            <ul>
+                                <li>{{ $status }}</li>
+                            </ul>
+                        </div>
+                    @else
+                        <div class="alert alert-danger">
+                            <ul>
+                                <li>{{ $status }}</li>
+                            </ul>
+                        </div>
+                    @endif
+                @endif
+            </div>
+            <h1>Contact Form</h1>
+            <div class="underline"></div>
             <form action="{{route('contact.store')}}" method="post">
                 @csrf
                 <div class="first-name">
