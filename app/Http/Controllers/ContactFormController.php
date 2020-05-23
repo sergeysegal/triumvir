@@ -75,7 +75,7 @@ class ContactFormController extends Controller
         // is still in the sandbox, this address must be verified.
         $recipient1 = 'sergeysegal4@gmail.com';
         $recipient2 = 'royandermannjr@gmail.com';
-        $recipient3 = 'xphillips2@gmail.com';
+//        $recipient3 = 'xphillips2@gmail.com';
 
         // Replace smtp_username with your Amazon SES SMTP user name.
         //$usernameSmtp = 'ses-smtp-user.20200519-145225';
@@ -124,7 +124,7 @@ class ContactFormController extends Controller
             // Specify the message recipients.
             $mail->addAddress($recipient1);
             $mail->addAddress($recipient2);
-            $mail->addAddress($recipient3);
+//            $mail->addAddress($recipient3);
             // You can also add CC, BCC, and additional To recipients here.
 
             // Specify the content of the message.
