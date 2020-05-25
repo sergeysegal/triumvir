@@ -79,10 +79,10 @@ class ContactFormController extends Controller
 
         // Replace smtp_username with your Amazon SES SMTP user name.
         //$usernameSmtp = 'ses-smtp-user.20200519-145225';
-        $usernameSmtp = env('AWS_ACCESS_KEY_ID');
+        $usernameSmtp = env('MAIL_USERNAME');
 
         // Replace smtp_password with your Amazon SES SMTP password.
-        $passwordSmtp = env('AWS_SECRET_ACCESS_KEY');
+        $passwordSmtp = env('MAIL_PASSWORD');
 
         // If you're using Amazon SES in a region other than US West (Oregon),
         // replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP
