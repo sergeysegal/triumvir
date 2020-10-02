@@ -1,0 +1,47 @@
+.sergey-pipeline-create-page {
+    .content-title {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .content-main {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .content-items {
+            border: 1px solid blue;
+            .content-form {
+
+                input {
+                    margin-bottom: 10px;
+                    height: 30px;
+                }
+
+                #submit-btn {
+                    cursor: pointer;
+                }
+            }
+
+            .content-table {
+                display: inline-block;
+                text-align: center;
+                border: 1px solid red;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+        }
+
+        .content-index {
+            .redirect-button a {
+                margin-bottom: 5px;
+                border: 1px solid black;
+                padding: 10px;
+                color: green;
+                background-color: lightblue;
+                text-decoration: none;
+            }
+        }
+    }
+}

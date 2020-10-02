@@ -32,7 +32,7 @@ class DemoController extends Controller
      */
     public function create()
     {
-        //
+        return view('demos.create');
     }
 
     /**
@@ -62,9 +62,13 @@ class DemoController extends Controller
 //        return view('demo', compact('id'));
     }
 
-    public function test() {
+    public function mobileNet() {
         return view('demos.mobile-net-images');
 
+    }
+
+    public  function pipeline() {
+        return view('demos.pipeline');
     }
 
     /**

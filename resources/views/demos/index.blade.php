@@ -9,9 +9,9 @@
 @section('content')
     <div class="sergey-demos-index-page">
         <ul>
-            <li><a href="{{route('demos.mobile-net-images')}}">MobileNet images</a></li>
+            <li><a href="{{route('demos.mobile-net-images')}}">MobileNet CNN</a></li>
+            <li><a href="{{route('demos.pipeline')}}">Product Pipeline</a></li>
         </ul>
-        <p>Welcome page</p>
     </div>
 @endsection
 

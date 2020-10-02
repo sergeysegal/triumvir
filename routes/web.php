@@ -33,10 +33,11 @@ Route::resource('contact', 'ContactFormController', ['except' => ['show','create
 Route::get('admin/contact/show_all', 'ContactFormController@showAll')->name('contact.show_all');
 
 
-//Route::resource('/demos', 'DemoController', ['except' => ['show','create', 'update', 'edit', 'destroy']]);
-Route::get('demos', 'DemoController@index')->name('demos.index');
-Route::post('demos','DemoController@store')->name('demos.store');
-Route::get('demos/mobile-net-images', 'DemoController@test')->name('demos.mobile-net-images');
+Route::resource('/demos', 'DemoController', ['except' => ['show', 'update', 'edit', 'destroy']]);
+//Route::get('demos', 'DemoController@index')->name('demos.index');
+//Route::post('demos','DemoController@store')->name('demos.store');
+Route::get('demos/mobile-net-images', 'DemoController@mobileNet')->name('demos.mobile-net-images');
+Route::get('demos/product-pipeline', 'DemoController@pipeline')->name('demos.pipeline');
 
 Route::resource('/careers', 'JobController', ['except' => ['show', 'update', 'edit', 'destroy']]);
 

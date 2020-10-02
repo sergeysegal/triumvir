@@ -25,7 +25,7 @@
             <form class="admin-content-form" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="d-flex flex-row justify-content-center my-flex-container">
-                    @include('partials.file-upload-btn')
+                    @include('snippets.file-upload-btn')
                 </div>
 {{--                    <div class="row justify-content-center mb-1">--}}
 {{--                        <input type="file" class="form-control-file" name="file" id="file-btn">--}}
